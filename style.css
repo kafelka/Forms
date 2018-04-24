@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+  /* IE10+ */ 
+  background-image: -ms-linear-gradient(top right, #00DAAF 0%, #2615BB 100%);
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top right, #00DAAF 0%, #2615BB 100%);
+  /* Opera */ 
+  background-image: -o-linear-gradient(top right, #00DAAF 0%, #2615BB 100%);
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #00DAAF), color-stop(100, #2615BB));
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top right, #00DAAF 0%, #2615BB 100%);
+  /* W3C Markup */ 
+  background-image: linear-gradient(to bottom left, #00DAAF 0%, #2615BB 100%);
+}
+header {
+  display: flex;
+  margin: 50px 0;
+  justify-content: center;
+}
+h1, h2 {
+  font-family: 'Titillium Web', sans-serif;
+}
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 3px rgba(127, 114, 140);
+}
+h2 {
+  color: white;
+  font-size: 2rem;
+  text-shadow: 1px 2px 2px #000000;
+  margin: 10px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.form-container {
+  background-color: rgba(127, 114, 140, 0.3);
+  padding: 18px;
+  border-radius: 3px;
+  width: 400px;
+}
+.form-wrapper {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+.form-template__main {
+  /* background-color: red; */
+}
+.form-template__row {
+  background-color: white;
+  border: 1px solid rgb(187, 187, 187);
+  display: flex;
+  height: 35px;
+  margin-bottom: 10px;
+}
+.form-template__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  color: rgb(204, 204, 204);
+}
+.form-bar {
+  width: 2px;
+  background-color: rgb(204, 204, 204);
+  border: 2px solid white;
+}
+
+.form-template__field {
+  font-family: 'Titillium Web', sans-serif;
+  border: 0;
+  padding-left: 10px;
+  flex: 1;
+}
+.form-template__row--check {
+  border: 0;
+  display: flex;
+  align-items: center;
+}
+input {
+  /* width: 100%; */
+}
