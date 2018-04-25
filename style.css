@@ -15,15 +15,16 @@ body {
   background-image: -webkit-linear-gradient(top right, #00DAAF 0%, #2615BB 100%);
   /* W3C Markup */ 
   background-image: linear-gradient(to bottom left, #00DAAF 0%, #2615BB 100%);
+  font-family: 'Titillium Web', sans-serif;
 }
 header {
   display: flex;
   margin: 50px 0;
   justify-content: center;
 }
-h1, h2 {
-  font-family: 'Titillium Web', sans-serif;
-}
+*:focus {
+  outline: none;
+  }
 h1 {
   font-size: 2.5rem;
   text-shadow: 2px 2px 3px rgba(127, 114, 140);
@@ -58,6 +59,7 @@ h2 {
 .form-template__row {
   background-color: white;
   border: 1px solid rgb(187, 187, 187);
+  border-radius: 1px;
   display: flex;
   height: 35px;
   margin-bottom: 10px;
@@ -74,18 +76,37 @@ h2 {
   background-color: rgb(204, 204, 204);
   border: 2px solid white;
 }
-
 .form-template__field {
+  background-color: white;
   font-family: 'Titillium Web', sans-serif;
+  color: grey;
   border: 0;
   padding-left: 10px;
   flex: 1;
+  /*for firefox*/
+  -moz-appearance: none;
+  /*for chrome*/
+  -webkit-appearance:none;
 }
 .form-template__row--check {
   border: 0;
   display: flex;
   align-items: center;
 }
-input {
-  /* width: 100%; */
+/* add textarea and checkbox */
+.form-template__row:hover, .form-textarea:hover { 
+  border-color: rgba(0, 218, 175, 0.5);
+} 
+.form-textarea {
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+  color: grey;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 2px;
+  width: 100%;
+  resize: none;
+  padding: 2% 4%;
+}
+.form-template__row--check {
+  background-color: #f4f4f4;
 }
